@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio del cuestionario</title>
+  <script>
+    // Lista de enlaces de tus formularios de Microsoft Forms
+    const urls = [
+      "https://forms.office.com/e/16xyQUHZ3P", // Cuestionario A
+      "https://forms.office.com/e/1J9CVRbc0S", // Cuestionario B
+      "https://forms.office.com/e/SZLN9M03mq"  // Cuestionario C
+    ];
+
+    // Elige uno al azar
+    const destino = urls[Math.floor(Math.random() * urls.length)];
+
+    // Espera 2 segundos y redirige
+    setTimeout(() => {
+      window.location.href = destino;
+    }, 2000);
+  </script>
+</head>
+<body style="font-family: sans-serif; text-align:center; margin-top: 10%;">
+  <h2>Redirigiendo al cuestionario...</h2>
+  <p>Por favor, espera unos segundos.</p>
+</body>
+</html>
